@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+*
+{color:lightgray}
+.landing {
+    position: relative;
+    background: url("../src/assets/landing_bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}

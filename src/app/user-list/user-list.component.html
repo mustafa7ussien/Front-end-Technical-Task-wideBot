@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>userlist</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr >
+                <th>Photeo</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Sending Email</th>
+            </tr>
+           
+        </thead>
+
+        <tbody>
+           
+            <tr *ngFor="let values of result">
+                <img src="{{values.avatar}}" alt="" width="70px"  height="70px" style="border-radius:50%">
+                <td>{{values.first_name}}</td>
+                <td>{{values.last_name}}</td>
+                <td>{{values.email}}</td>
+                <td><a class="btn btn-primary" href="{{result2.url}}">Send Email</a></td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
